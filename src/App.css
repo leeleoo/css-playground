@@ -1,5 +1,5 @@
-.App {
-  text-align: center;
+body {
+  background-color: #f9f9f9;
 }
 
 .App-logo {
@@ -35,4 +35,42 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:hover{
+  background-color: lightgray;
+}
+.code_view{
+  flex: 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.effect{
+  flex: 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shadow-outset{
+  box-shadow: 8px 8px 8px rgb(0, 0, 0,0.3),
+    -8px -8px 8px rgba(255,255,255,0.7);
+  width: 300px;
+  height: 500px;
+  border-radius: 30px;
+}
+.shadow-inset{
+  box-shadow: inset 8px 8px 8px rgb(0, 0, 0,0.3),
+    inset -8px -8px 8px rgba(255,255,255,0.7);
+  width: 300px;
+  height: 500px;
+  border-radius: 30px;
 }
